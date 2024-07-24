@@ -578,12 +578,12 @@ a.break:active {
 }
 
 .about-head {
-    font-family: "Playfair Display", serif;
-    font-weight: 700;
-    font-size: 3rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 5rem;
     letter-spacing: 0.1rem;
-    margin-bottom: 0.8rem;
-    color:#040D12;
+    margin-bottom: 0.1rem;
+    color:#a58540;
 }
 
 .about-body {
@@ -607,16 +607,16 @@ a.break:active {
     max-width: 35rem;
 }
 
-  #tools {
+#tools {
     font-size: 2rem;
     text-align: center;
     margin-top: 0.8rem;
-  }
+}
 
-  #tools
-  .fa-brands {
+#tools
+    .fa-brands {
     margin-right: 1rem;
-  }
+}
 
   @keyframes dropIn {
     from {

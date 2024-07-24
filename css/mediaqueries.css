@@ -3,24 +3,19 @@
         font-size: 1.8rem;
         margin-bottom: .1rem;
     }
-    
     .title {
         font-size: 5.7rem;
         letter-spacing: 0.4rem;
         line-height: 5.5rem;
         margin-bottom: .5rem;
     }
-    
     .profile__text__tail {
         font-size: 1.2rem;
-    }
-    
+    } 
     .profile__text__tail .highlighted {
         font-size: 1.2rem; 
     }
-    
     a.break {
-        color: rgb(255, 238, 0);
         font-size: 1.2rem;
     }
   }
@@ -28,54 +23,33 @@
   @media screen and (max-width: 1280px) {
     #about-section {
       padding: 1rem 5rem 0;
-  }
-  
-  .about__text {
-      padding-top: 7rem;
-      max-width: 35rem;
-  }
-  
-  .about-head {
-      font-family: "Bebas Neue", sans-serif;
-      font-weight: 400;
-      font-style: normal;
-      font-size: 5rem;
-      letter-spacing: 0.1rem;
-      margin-bottom: 0.8rem;
-      color:#a58540;
-  }
-  
-  .about-body {
-      font-family: "Open Sans", sans-serif;
-      font-weight: 500;
-      font-size: 1.2rem;
-      line-height: 2rem;
-      color:#040D12;
-  }
-  
-  .img-2 {
-      width: 33rem;
-      color: #a58540;
-  }
-  
-  .img-3 {
-      width: 32rem;
-  }
-  
-  .about__languages {
-      padding-top: 5rem;
-      max-width: 35rem;
-  }
-  
-    #tools {
-      font-size: 2rem;
-      text-align: center;
-      margin-top: 0.8rem;
     }
-  
-    #tools
-    .fa-brands {
-      margin-right: 1rem;
+    .about__text {
+        padding-top: 6.5rem;
+        max-width: 35rem;
+    }
+    .about-head {
+        font-size: 4.5rem;
+        letter-spacing: 0.1rem;
+        margin-bottom: 0.2rem;
+        color:#a58540;
+    }
+    .about-body {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 2rem;
+        color:#040D12;
+    }
+    .img-2 {
+        width: 30rem;
+        color: #a58540;
+    }
+    .img-3 {
+        width: 26rem;
+    }
+    .about__languages {
+        padding-top: 2rem;
+        max-width: 35rem;
     }
   }
     
@@ -86,95 +60,102 @@
     #hamburger-nav {
       display: flex;
     }
-
     .profile__image-container {
       height: 450px; 
       width: 450px;
       margin-left: 3rem;
-      animation: slideUpFade 1s ease-out forwards;  
     }
-    
     .profile__text__head {
       font-size: 1.4rem;
       margin-bottom: .1rem;
     }
-  
     .title {
       font-size: 3.7rem;
-      letter-spacing: 0.4rem;
+      letter-spacing: .4rem;
       line-height: 3.5rem;
       margin-bottom: .2rem;
     }
-  
     .profile__text__tail {
       font-size: 1rem;
       line-height: 1.7rem;
       max-width: 30rem;
     }
-    
     .profile__text__tail .highlighted {
         font-size: 1.1rem; 
     }
-    
     a.break {
-        color: rgb(255, 238, 0);
         font-size: 1.1rem;
     }
-
     #socials {
       font-size: 1.2rem;
     }
-  
     .fa-brands {
         margin-right: .4rem;
     }
-
   }
 
   @media screen and (max-width: 1024px) { 
     .profile__image-container {
       height: 450px; 
       width: 450px;
-      margin-left: 3rem;
-      animation: slideUpFade 1s ease-out forwards;  
     }
-    
     .profile__text__head {
       font-size: 1.2rem;
       margin-bottom: .1rem;
     }
-  
     .title {
       font-size: 3.7rem;
       letter-spacing: 0.4rem;
       line-height: 0;
       margin-bottom: 0;
     }
-    
     br {
       display: none;
     }
-  
     .profile__text__tail {
       font-size: .7rem;
       line-height: 0;
       max-width: 20rem;
-    }
-    
+    }  
     .profile__text__tail .highlighted {
         font-size: .8rem; 
     }
-    
     a.break {
         font-size: .8rem;
     }
-
     #socials {
       font-size: 1.12rem;
     }
-  
     .fa-brands {
         margin-right: .4rem;
+    }
+    #about-section {
+      padding: 1rem 3rem 0;
+    }
+    .about__text {
+        padding-top: 4rem;
+        max-width: 35rem;
+    }
+    .about-head {
+        font-size: 3.5rem;
+    }
+    .about-body {
+        font-size: .96rem;
+        line-height: 1.8rem;
+    }
+    .img-2 {
+        width: 25rem;
+    }
+    .img-3 {
+        width: 20rem;
+    }
+    .about__languages {
+        padding-top: 1rem;
+        max-width: 35rem;
+    }  
+    #tools {
+        font-size: 1.3rem;
+        margin-top: .2rem;
     }
   }
   
@@ -207,21 +188,6 @@
       display: none;
     }
 
-    article {
-      font-size: 1rem;
-    }
-    footer nav {
-      height: fit-content;
-      margin-bottom: 2rem;
-    }
-    
-    .contact-info-container {
-      margin: 0;
-    }
-    .contact-info-container p,
-    .nav-links li a {
-      font-size: 1rem;
-    }
     .logo {
       font-size: 2.5rem;
     }
@@ -239,10 +205,23 @@
     }
   }
 
+  @media screen and (max-width: 900px) {
+    .profile__image-container {
+      height: 300px; 
+      width: 300px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    #about-section {
+      padding: 1rem 2rem 0;
+    }
+  }
+
   @media screen and (max-width: 768px) {
     .profile__image-container {
-      height: 200px; 
-      width: 200px;
+      height: 250px; 
+      width: 250px;
     }
 
     .profile__text {
@@ -270,15 +249,43 @@
       .profile__text__tail .highlighted {
         font-size: 0.95rem; 
     }  
-
     a.break {
       font-size: 0.84rem;
       padding-left: 3px;
       padding-right: 3px;
     }
+    #about-section {
+      padding: 1rem 4rem 0;
+    }
+    .about__text {
+        padding-top: 2rem;
+        max-width: 20rem;
+    }
+    .about-head {
+        font-size: 2rem;
+    }
+    .about-body {
+        font-size: .7rem;
+        line-height: 1.4rem;
+    }
+    .img-2 {
+        width: 18rem;
+    }
+    .img-3 {
+        width: 16rem;
+    }
+    .about__languages {
+        padding-top: 1rem;
+        max-width: 40rem;
+    }
+    #tools {
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 0.8rem;
+    }
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 640px) {
     nav {
       padding: 1.2rem 1.5rem;
     }
@@ -319,4 +326,93 @@
     .profile__text__tail .highlighted {
         font-size: 1rem; 
    }
+   #about-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 0rem 1.5rem 0;
+    overflow: hidden;
+  }
+
+  .about__text {
+      padding-top: 2rem;
+      max-width: 100%;
+  }
+
+  .about-head {
+      font-size: 2rem;
+  }
+
+  .about-body {
+      font-size: .8rem;
+      line-height: 1.4rem;
+  }
+
+  .img-2 {
+      width: 13rem;
+  }
+
+  .img-3 {
+      width: 10rem;
+      position: relative;
+      top: -5rem;
+  }
+
+  .about__languages {
+      padding-top: 1rem;
+      max-width: 35rem;
+  }
+
+  #tools {
+      font-size: 1rem;
+      text-align: center;
+      margin-top: 0.8rem;
+      position: relative;
+      top: 2rem;
+      left: 24rem;
+      display: grid;
+      max-width: 2rem;
+  }
+
+  #tools
+      .fa-brands {
+      margin-bottom: 0.3rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #tools {
+    top: 2rem;
+    left: 22rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #tools {
+    top: 2rem;
+    left: 20rem;
+  }
+  .about__icon2 {
+    order: 2;
+    max-height: 7rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .profile__image-container {
+    height: 280px; 
+    width: 280px;
+  }
+
+  #tools { 
+    top: 2rem;
+    left: 19rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #tools { 
+    top: 2rem;
+    left: 15rem;
+  }
 }
