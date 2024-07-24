@@ -325,59 +325,55 @@
     }
     .profile__text__tail .highlighted {
         font-size: 1rem; 
-   }
-   #about-section {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0;
-    padding: 0rem 1.5rem 0;
-    overflow: hidden;
-  }
-
-  .about__text {
-      padding-top: 2rem;
-      max-width: 100%;
-  }
-
-  .about-head {
-      font-size: 2rem;
-  }
-
-  .about-body {
-      font-size: .8rem;
-      line-height: 1.4rem;
-  }
-
-  .img-2 {
-      width: 13rem;
-  }
-
-  .img-3 {
-      width: 10rem;
-      position: relative;
-      top: -5rem;
-  }
-
-  .about__languages {
-      padding-top: 1rem;
-      max-width: 35rem;
-  }
-
-  #tools {
-      font-size: 1rem;
-      text-align: center;
-      margin-top: 0.8rem;
-      position: relative;
-      top: 2rem;
-      left: 24rem;
-      display: grid;
-      max-width: 2rem;
-  }
-
-  #tools
-      .fa-brands {
-      margin-bottom: 0.3rem;
-  }
+    }
+    #about-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0;
+        padding: 0rem 1.5rem 0;
+        overflow: hidden;
+    }
+    .about__text {
+        padding-top: 2rem;
+        max-width: 100%;
+    }
+    .about-head {
+        font-size: 2rem;
+    }
+    .about-body {
+        font-size: .8rem;
+        line-height: 1.4rem;
+    }
+    .img-2 {
+        width: 13rem;
+    }
+    .img-3 {
+        width: 10rem;
+        position: relative;
+        top: -5rem;
+    }
+    .about__languages {
+        padding-top: 1rem;
+        max-width: 35rem;
+    }
+    #tools {
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 0.8rem;
+        position: relative;
+        top: 2rem;
+        left: 24rem;
+        display: grid;
+        max-width: 2rem;
+    }
+    #tools
+        .fa-brands {
+        margin-bottom: 0.3rem;
+    }
+    .about__icon2 {
+      order: 2;
+      max-height: 7rem;
+    }
 }
 
 @media screen and (max-width: 540px) {
@@ -385,8 +381,7 @@
     top: 2rem;
     left: 22rem;
     animation: upDown 2s ease-in-out infinite;
-  }
-    
+  }  
   @keyframes upDown {
     0%, 100% {
       transform: translateY(0);
@@ -413,7 +408,6 @@
     height: 280px; 
     width: 280px;
   }
-
   #tools { 
     top: 2rem;
     left: 19rem;
