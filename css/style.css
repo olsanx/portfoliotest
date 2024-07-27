@@ -23,6 +23,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #7a7171;
+    background-image: url(../assets/images/background3.png);
 } 
 
 html {
@@ -406,9 +407,8 @@ keyboard-focus on browsers that do support
 
 
 section {
-    padding-top: 2vh;
+    padding-top: vh;
     box-sizing: border-box;
-    min-height: fit-content;
 }
 
 #profile-details {
@@ -416,9 +416,9 @@ section {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    min-height: 75vh;
+    min-height: 85vh;
     padding: 0 4rem 3rem;
-    position: relative;
+    /**position: relative;**/
     background-color: rgb(24, 24, 24);
     background-image: url(../assets/images/background7.png);
 }
@@ -563,13 +563,17 @@ a.break:active {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    padding: 1rem 10rem 0;
-    min-height: 45vh;
+    padding: 0 10rem 0;
+    min-height: 50vh;
     background-image: url(../assets/images/background3.png);
-    background-size: cover;
+    /**background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;**/
     justify-items: center;
+    animation: fade-in linear forwards;
+        animation-timeline: view();
+        animation-range-start: cover;
+        animation-range-end: 1000px;
 }
 
 .about__text {
@@ -594,13 +598,29 @@ a.break:active {
     color:#040D12;
 }
 
-.img-2 {
-    width: 33rem;
+@media (prefers-reduced-motion: no-preference) {
+    .img-2 {
+        width: 33rem;
+        animation: fade-in linear;
+        animation-timeline: view();
+        animation-range-start: cover;
+        animation-range-end: 700px;
+    }
+
+    .img-3 {
+        width: 30rem;
+        animation: fade-in linear forwards;
+        animation-timeline: view();
+        animation-range-start: cover;
+        animation-range-end: 600px;
+    }
+
+    @keyframes fade-in {
+        from {scale: .8; opacity: 0;}
+        to {scale: 1; opacity: 1;}
+    }  
 }
 
-.img-3 {
-    width: 32rem;
-}
 
 .about__languages {
     padding-top: 5rem;
@@ -668,6 +688,83 @@ a.break:active {
 
 
 
+
+  
+  #portfolio-section {
+    padding: 4rem 5rem;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../assets/images/background3.png);
+  }
+  
+  .portfolio-header {
+    text-align: start;
+    margin-bottom: 30px;
+  }
+  
+  .portfolio-header h2 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    color: #a58540;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    max-width: 30rem;
+    line-height: 4rem;
+    justify-content: left;
+    margin-left: 15rem;
+  }
+  
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6rem;
+    max-width: 1200px; 
+    width: fit-content;
+    padding: 0 20px; 
+    margin: 0 auto; 
+  }
+  
+  .portfolio-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .portfolio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .portfolio-card img {
+    width: 25rem;
+    height: 10rem;
+  }
+  
+  .portfolio-card h3 {
+    padding: 10px;
+    font-size: 1.2em;
+  }
+  
+  .portfolio-card p {
+    padding: 0 10px 10px;
+    color: #555;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1200px) {
+    .portfolio-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .portfolio-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
 
 
 
