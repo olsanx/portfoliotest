@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/mediaqueries.css">
     <link rel="stylesheet/less" type="text/css" href="./css/style.less" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Document</title>
 </head>
 <body>
@@ -31,6 +32,7 @@
                 <button type="button" name="Hover" onclick="window.open('./assets/resume.pdf')">Download CV</button>
             </div>
         </nav>
+       
         
         <nav id="hamburger-nav">
             <div class="logo">MARV</div>
@@ -64,13 +66,13 @@
         </nav>
     </header> 
 
-    <section id="profile-details" >
+    <section id="profile-details" data-aos="fade-down">
             <div class="profile__text">
                 <p class="profile__text__head">
                     <span class="typing-effect">Hello, I'm,</span>
                 </p>
                 <h1 class="title"> Ajayi-Akinboye <br>Marvellous.</h1>
-                <p class="profile__text__tail">A dedicated<a class="break" data-link-alt="and writer"><span class="highlighted">frontend developer</span></a>with a flair for creating stunning user interfaces. I specialize in transforming ideas into visually appealing and functional web experiences that captivate and engage users </p>
+                <p class="profile__text__tail" data-aos="fade-right">A dedicated<a class="break" data-link-alt="and writer"><span class="highlighted">frontend developer</span></a>with a flair for creating stunning user interfaces. I specialize in transforming ideas into visually appealing and functional web experiences that captivate and engage users </p>
                 <div id="socials">
                     <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
                     <a href=""><i class="fa-brands fa-github"></i></a>
@@ -78,23 +80,23 @@
                     <a href=""><i class="fa-regular fa-envelope"></i></a>
                 </div>
             </div>
-            <div class="profile__image-container"> 
+            <div id="home" class="profile__image-container"> 
                 <img src="./assets/images/profile3.svg" class="profile__image">
             </div>
            
     </section>
-    <section id="about-section">
-        <div class="about__text">
+    <section id="about-section" data-aos="fade-up">
+        <div id="about" class="about__text" data-aos="fade-left">
             <h2 class="about-head">About Me</h2>
             <p class="about-body">Hello once again, I'm Marvellous, a frontend developer with a passion for creating captivating and intuitive user experiences that bring ideas to life. In my spare time, I enjoy writing as a creative outlet as it allows me to express my thoughts and creativity in a different medium. Additionally, Music serves as my therapy, providing inspiration and relaxation amidst my coding endeavors</p>
         </div>
-        <div class="about__icon">
+        <div class="about__icon" data-aos="fade-up">
             <img src="./assets/images/Waiting.svg" class="img-2" alt="about-image">
         </div>
-        <div class="about__icon2">
+        <div class="about__icon2" data-aos="fade-up">
             <img src="./assets/images/Bueno.svg" class="img-3" alt="language-image">
         </div>
-        <div class="about__languages">
+        <div class="about__languages" data-aos="fade-right">
             <h2 class="about-head">Skills And Tools</h2>
             <p class="about-body">I employ the use of HTML5, CSS3, and JavaScript to craft high-quality, interactive web experiences, while also building myself up in the knowledge of frameworks and libraries along the way. For version control and collaboration, I rely on Git/GitHub, ensuring seamless project management and code integrity. My proficiency with Bootstrap allows me to build responsive and visually appealing web interfaces efficiently</p>
             <div id="tools">
@@ -107,15 +109,17 @@
         </div>
     </section>
     
-    <section id="portfolio-section">
-            <div class="portfolio-header">
-              <h2>here are some projects I have worked on fjkdhgjkhrhasgihf</h2>
+    
+    <section id="portfolio-section" data-aos="fade-up">
+            <div id="projects" class="portfolio-header">
+              <h2 data-aos="fade-up">here are some projects I have worked on </h2>
+              <p data-aos="fade-down">These projects showcase my skills in creating stunning user interfaces and delivering functional web experiences. Each project reflects my commitment to quality and attention to detail.</p>
             </div>
-            <div class="portfolio-grid">
+            <div class="portfolio-grid" data-aos="fade-right">
               <div class="portfolio-card" data-category="web">
                 <img src="https://plus.unsplash.com/premium_photo-1676637000058-96549206fe71?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="Project 1">
                 <h3>Project Title 1</h3>
-                <p>Short description of the project.</p>
+                <p>Short description of the project.I employ tless project management and code integrity. My proficiency with Bootstrap allows me to build responsive and visually appealing web interfaces efficiently</p>
               </div>
               <div class="portfolio-card" data-category="design">
                 <img src="https://plus.unsplash.com/premium_photo-1676637000058-96549206fe71?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="Project 2">
@@ -130,7 +134,7 @@
               <div class="portfolio-card" data-category="design">
                 <img src="https://plus.unsplash.com/premium_photo-1676637000058-96549206fe71?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="Project 4">
                 <h3>Project Title 4</h3>
-                <p>Short description of the project.</p>
+                <p>Short description of the project.I employ tless project management and code integrity. My proficiency with Bootstrap allows me to build responsive and visually appealing web interfaces efficiently</p>
               </div>
               <div class="portfolio-card" data-category="web">
                 <img src="https://plus.unsplash.com/premium_photo-1676637000058-96549206fe71?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="Project 5">
@@ -146,6 +150,13 @@
     </section>
     <script src="index.js"></script>
     <script src="https://kit.fontawesome.com/4ac61ee153.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        duration: 1000,
+      });
+    </script>
 </body>
 </html> 
 
