@@ -69,9 +69,9 @@
     <section id="profile-details" data-aos="fade-down">
             <div class="profile__text">
                 <p class="profile__text__head">
-                    <span class="typing-effect">Hello, I'm,</span>
+                    <span class="typing-effect">Hello, I'm</span>
                 </p>
-                <h1 class="title"> Ajayi-Akinboye <br>Marvellous.</h1>
+                <h1 class="title"> Ajayi-Akinboye <br>Marvellous</h1>
                 <p class="profile__text__tail" data-aos="fade-right">A dedicated<a class="break" data-link-alt="and writer"><span class="highlighted">frontend developer</span></a>with a flair for creating stunning user interfaces. I specialize in transforming ideas into visually appealing and functional web experiences that captivate and engage users </p>
                 <div id="socials">
                     <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
@@ -148,14 +148,53 @@
               </div>
             </div>
     </section>
+        
+    <section id="contact" data-aos="fade-right">
+        <div class="message">
+            <h2 data-aos="fade-up">Want us to create sci-magic?</h2>
+            <p data-aos="fade-down">I'll be glad to hear from you on whatever topic <br>you want to discuss</p>
+        </div>
+        <div>
+           <form id="message-form">
+                <div class="form-flex">
+                    <div class="form-title" data-aos="fade-left">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-title" data-aos="fade-right"> 
+                        <label for="email">Email Address</label>
+                        <input type="text" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-title" data-aos="fade-up">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="1" required></textarea>
+                </div>
+                <button class="magic" type="submit">ABRACADABRA</button>
+           </form>
+        </div>
+    </section>
+    <section>
+
+    </section>
     <script src="index.js"></script>
     <script src="https://kit.fontawesome.com/4ac61ee153.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
-        offset: 200,
+        offset: 150,
         duration: 1000,
       });
+    </script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "p7g1Nn9SvQ0nRNZbx",
+            });
+        })();
     </script>
 </body>
 </html> 

@@ -13,7 +13,6 @@ function toggleMenu() {
 }
 
 
-
 // Event listener to close the menu when clicking outside of it
 document.addEventListener('click', function(event) {
     var menu = document.querySelector('.menu-links');
@@ -60,31 +59,36 @@ window.addEventListener('DOMContentLoaded', () => {
     checkTypingEffectComplete();
 });
 
-// Variables to handle scroll state
-let isScrolling = false;
-let isScrollingUp = false;
+function sendMail(){
+    let 
+}
 
-// Add scroll event listener
-window.addEventListener('wheel', function(event) {
-    if (isScrolling) return;
-    
-    // Set scrolling state
-    isScrolling = true;
 
-    // Determine direction of scroll
-    if (event.deltaY > 0) {
-        // Scrolling down
-        scrollToNextSection();
-    } else {
-        // Scrolling up
-        scrollToPreviousSection();
-    }
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('message-form');
 
-    // Allow scrolling again after a short delay
-    setTimeout(() => isScrolling = false, 800); // Adjust timing as needed
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        emailjs.sendForm('service_u1h6uto', 'template_uobism9', form)
+            .then((response) => {
+                console.log('SUCCESS!', response.status, response.text);
+                alert('Thank you for your message!');
+                form.reset();
+            }, (error) => {
+                console.log('FAILED...', error);
+                alert('Failed to send the message. Please try again later.');
+            });
+    });
 });
 
 
+
+  
+
+  
+
+  
 
 
 
