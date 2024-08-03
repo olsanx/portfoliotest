@@ -59,9 +59,6 @@ window.addEventListener('DOMContentLoaded', () => {
     checkTypingEffectComplete();
 });
 
-function sendMail(){
-    let 
-}
 
 
 document.addEventListener('DOMContentLoaded', () => {

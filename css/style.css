@@ -609,7 +609,7 @@ a.break:active {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     padding: 0 10rem 2rem;
-    min-height: 50vh;
+    
     /**background-size: cover;
     background-position: center;
     background-repeat: no-repeat;**/
@@ -792,7 +792,7 @@ a.break:active {
     display: flex;
     flex-direction: column;
     min-height: 85vh;
-    padding: 0rem 0rem;
+    padding: 2rem 0rem;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -871,4 +871,46 @@ textarea:focus {
     cursor: pointer;
     color: #ffffff;
     background: #a3874c;
+}
+
+#footer {
+    background: #040D12;
+    min-height: 30vh;
+}
+
+.footer-logo {
+    font-family: 'minus.regular';
+    font-weight: regular;
+    font-size: 22.5rem;
+    color: #a3874c;
+    cursor: default;
+    letter-spacing: .8rem;
+    text-align: center;
+}
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    padding: 0 2rem;  
+    color: #c9bfbf;
+    max-width: 200rem;
+}
+
+.footer-cp {
+   font-family: "Open Sans", sans-serif; 
+   font-size: .89rem;
+   font-weight: 300;
+}
+
+.footer-br {
+    margin-right: 2rem;
+    font-size: 2rem;
+    padding-bottom: 3rem;
+}
+
+.footer-br:hover {
+    font-size: 2rem;
+    color: #a3874c;
+    padding-bottom: 3rem;
+    transition: 300ms ease;
 }
