@@ -3,7 +3,7 @@ function toggleMenu() {
     const icon = document.querySelector(".hamburger-icon");
     menu.classList.toggle("open");
     icon.classList.toggle("open");
-  }
+}
   function toggleMenu() {
     const menu = document.querySelector('.menu-links');
     const icon = document.querySelector('.hamburger-icon');
@@ -26,16 +26,7 @@ document.addEventListener('click', function(event) {
 });
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Select the navbar element
-    const navbar = document.querySelector('nav');
-
-    // Add the animation class to the navbar
-    navbar.classList.add('navbar-animate');
-});
-
 window.addEventListener('DOMContentLoaded', () => {
-    const typingEffectDuration = 3000; // Match with your typing effect duration
     const typingEffect = document.querySelector('.typing-effect');
     const title = document.querySelector('.title');
 
@@ -58,7 +49,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
     checkTypingEffectComplete();
 });
-
 
 
 document.addEventListener('DOMContentLoaded', () => {

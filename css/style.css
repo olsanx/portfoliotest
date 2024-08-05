@@ -236,9 +236,6 @@ keyboard-focus on browsers that do support
     }
 }
 
-.navbar-animate {
-    animation: dropIn 1s ease-out forwards;
-}
 
 @keyframes typing {
     from {
